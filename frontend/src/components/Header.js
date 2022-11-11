@@ -17,7 +17,7 @@ const Header = () => {
   return (
     <div className='header-wrapper'>
       <div className='header-div'>
-        <i onClick={searchBtnHandler} class="fa-solid fa-magnifying-glass"></i>
+        <i onClick={searchBtnHandler} className="fa-solid fa-magnifying-glass"></i>
         <i className="fa-brands fa-css3"></i>
         <i onClick={sbHandler} className="fa-solid fa-bars"></i>
       </div>

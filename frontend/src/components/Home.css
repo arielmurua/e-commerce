@@ -1,0 +1,11 @@
+.home-wrapper {
+  position: relative;
+  top: 60px;
+}
+.home-banner > img {
+  height: 160px;
+  width: 100%;
+}
+.home-title {
+  text-align: center;
+}
