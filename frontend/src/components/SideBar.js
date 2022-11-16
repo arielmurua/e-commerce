@@ -1,5 +1,6 @@
 import React from 'react'
 import './SideBar.css'
+import {Link} from 'react-router-dom'
 
 const SideBar = (props) => {
   return (
@@ -7,8 +8,12 @@ const SideBar = (props) => {
       <div className='sidebar'>
         <ul className='main-menu-list'>
           <div className='user-menu'>
-            <button className='btn'>LOG IN</button>
-            <button className='btn'>REGISTER</button>
+            <Link to='/login' className='btn'>
+              <p>LOG IN</p>
+            </Link>
+            <Link to='/register' className='btn'>
+              <p>REGISTER</p>
+            </Link>
           </div>
           <ul className='sub-menu-list'>
             <div className='item-title'>
@@ -36,6 +41,10 @@ const SideBar = (props) => {
           </ul>
           <li>Item Z</li>
         </ul>
+        <hr/>
+        <Link className='btn' to='/'>
+          <i class="fa-solid fa-house"></i>
+        </Link>
       </div>
     </div>
   )

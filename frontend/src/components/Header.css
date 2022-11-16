@@ -4,6 +4,7 @@
 }
 .header-div {
   position: fixed;
+  top: 0;
   background-color: #282828;
   color: white;
   width: 100%;

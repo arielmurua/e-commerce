@@ -1,0 +1,14 @@
+.carrousel-container {
+  width: 100%;
+  overflow-y: hidden;
+  overflow-x:unset;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.btn-crss {
+  background-color: aliceblue;
+  position: absolute;
+  z-index: 998;
+  border: 1px black solid;
+}

@@ -41,9 +41,17 @@
   align-items: center;
 }
 .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100px;
   height: 40px;
   border: none;
   background-color: lightcoral;
   border-radius: 20px;
+  text-decoration: none;
+  color: black;
+}
+.btn > p {
+  margin: 0;
 }
