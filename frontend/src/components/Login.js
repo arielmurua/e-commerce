@@ -17,7 +17,7 @@ const Login = () => {
         <input type={'password'} name='pwd' id='pwd' className='login-input'/>
         <div className='login-input-container'>
           <label htmlFor='rememberMe'>Recordarme</label>
-          <input type={'checkbox'} name='rememberMe' className='rememberMe'/>
+          <input type={'checkbox'} name='rememberMe' id='rememberMe' className='rememberMe'/>
         </div>
         <p>Forgot your password?</p>
         <button onClick={loginHandler} className='login-btn' type={'submit'}>GO</button>

@@ -1,4 +1,6 @@
 const { validationResult } = require('express-validator')
+const User = require('../../models/User')
+const bcryptjs = require('bcryptjs')
 
 module.exports = {
   index: (req, res) => {
@@ -6,16 +8,30 @@ module.exports = {
   },
   register: (req, res) => {
     let errors = validationResult(req)
-    let data
+    let response
     if (!errors.isEmpty()) {
-      data = {
+      response = {
         errors: errors.mapped(),
       }
     } else {
-      data = {
-        data: {...req.body}
+      let hashedPwd = bcryptjs.hashSync(req.body.password, 10)
+      let newUser = {
+        ...req.body,
+        password: hashedPwd,
+        rePassword: undefined
+      }
+      let modelReponse = User.create(newUser)
+      if (modelReponse.status === 0) {
+        response = {
+          msg: 'success',
+        }
+      } else {
+        response = {
+          msg: 'fail',
+        }
       }
     }
-    return res.send(data)
-  }
+    return res.json(response)
+  },
+  
 }

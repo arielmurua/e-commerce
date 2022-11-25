@@ -1,0 +1,6 @@
+carrousels
+image-carrousels
+color selector
+other parameter selector
+
+menues fix

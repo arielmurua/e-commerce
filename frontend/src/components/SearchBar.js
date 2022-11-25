@@ -4,6 +4,7 @@ import './SearchBar.css'
 const searchBar = (props) => {
   const searchSubmit = (e) => {
     e.preventDefault();
+
   }
   return (
     <div id="searchBar" className={props.show}>

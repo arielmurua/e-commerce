@@ -1,0 +1,18 @@
+.notfound-wrapper {
+  height: 100vh;
+  width: 100vw;
+}
+.notfound-title {
+  margin: 20px;
+}
+.notfound-link {
+  text-decoration: none;
+  color: black;
+}
+.notfound-link > p {
+  margin: 20px;
+  width: fit-content;
+  background-color: slateblue;
+  border-radius: 40px;
+  padding: 20px;
+}

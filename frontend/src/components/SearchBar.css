@@ -1,14 +1,16 @@
 #searchBar {
-  display: none;
+  position: fixed;
+  top: -60px;
+  z-index: -999;
+  background-color: #282828;
+  width: 100%;
+  transition: 0.33s;
 }
 #searchBar.show-search {
   position: fixed;
   top: 60px;
-  z-index: 999;
+  /* z-index: 999; */
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-color: #282828;
 }
 .search-form {
@@ -23,13 +25,18 @@
   background-color: whitesmoke;
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
+  transition: 0.33s;
+}
+.search-input:focus {
+  outline: none;
+  border: 2px solid slateblue;
 }
 .btn-search {
   height: 43px;
   width: 50px;
   margin: 10px 10px 10px 0;
   border: none;
-  background-color: lightcoral;
+  background-color: slateblue;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
 }
