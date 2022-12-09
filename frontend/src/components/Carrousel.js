@@ -7,7 +7,7 @@ const Carrousel = () => {
 
   return (
     <div className='carrousel-container'>
-      {array.map(() => <ProductCard />)}
+      {array.map((index) => <ProductCard key={index++} />)}
       <p>btn</p>
     </div>
   )

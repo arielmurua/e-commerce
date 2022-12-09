@@ -4,3 +4,5 @@ color selector
 other parameter selector
 
 menues fix
+
+important: empty form values when changing pages

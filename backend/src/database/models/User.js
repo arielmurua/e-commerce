@@ -24,7 +24,6 @@ module.exports = (sequelize, DataTypes) => {
     },
     avatar: {
       type: DataTypes.STRING(255),
-      allowNull: false,
       default: "default.png"
     },
     first_name: {

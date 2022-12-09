@@ -30,7 +30,7 @@ const Home = () => {
       </div>
       <h2 className='home-title'>Productos</h2>
       <div className='home-products'>
-        {array.map(() => <ProductCard />)}
+        {array.map((index) => <ProductCard key={index++} />)}
       </div>
     </div>
   )

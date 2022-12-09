@@ -1,8 +1,10 @@
 import React from 'react'
 import './SideBar.css'
 import {Link} from 'react-router-dom'
+import { AuthContext } from './App'
 
 const SideBar = (props) => {
+  const { userLogged, logOut } = React.useContext(AuthContext)
   return (
     <div id="sidebar-wrapper" className={props.show}>
       <div className='sidebar'>
@@ -43,8 +45,16 @@ const SideBar = (props) => {
         </ul>
         <hr/>
         <Link className='btn' to='/'>
-          <i class="fa-solid fa-house"></i>
+          <i className="fa-solid fa-house"></i>
         </Link>
+        {userLogged ?
+          <>
+            <small>{userLogged.email}</small>
+            <button onClick={logOut} className='btn'>LOGOUT</button> 
+          </>
+          :
+          <></>
+        }
       </div>
     </div>
   )

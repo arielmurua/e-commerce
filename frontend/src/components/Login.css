@@ -1,7 +1,6 @@
-/* .login-wrapper {
-  position: relative;
-  top: 60px;
-} */
+.login-wrapper {
+  margin: 25% 0;
+}
 .login-wrapper > p {
   text-align: center;
 }
