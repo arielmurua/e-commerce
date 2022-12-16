@@ -1,0 +1,117 @@
+.user-info-card {
+  margin: 20px;
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: whitesmoke;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgb(100, 100, 100);
+}
+.user-info-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.user-info-card > .username-img-container > img {
+  height: 150px;
+  border-radius: 20px;
+}
+.user-info-container > .info-line {
+  display: flex;
+  align-self: flex-start;
+}
+.info-line > .field-name {
+  color: #999999;
+  margin: 7px 10px 10px 0;
+  font-size: 14px;
+}
+.info-line > .field-info {
+  font-weight: bold;
+  font-size: 16px;
+  margin: 0;
+  align-self: center;
+  border: none;
+  background-color: whitesmoke;
+}
+
+.user-info-card > .tarjetas {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.user-info-card > .tarjetas > p {
+  flex-grow: 1;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 10px 5px;
+}
+@media (min-width: 640px) {
+
+  /*user profile*/
+  .user-info-card {
+    flex-direction: row;
+  }
+  .username-img-container {
+    flex-grow: 0.33;
+  }
+  .user-info-card > .username-img-container > img {
+    height: 300px;
+  }
+  .user-info-container {
+    flex-grow: 0.66;
+    margin: 0 0 0 50px;
+  }
+  .user-list-card {
+    width: 45%;
+  }
+}
+
+@media (min-width: 1024px) {
+  /*user profile*/
+  .profile-container {
+    padding: 20px 0;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .user-info-container {
+    margin: 0;
+  }
+  .user-info-card {
+    margin: 0 20px 0 0;
+    min-width: 350px;
+    flex-direction: column;
+  }
+  .user-info-card > .username-img-container > img {
+    height: 325px;
+  }
+
+  .user-favs-container {
+    margin: 0;
+    width: 30%;
+  }
+  .user-favs-container > .fav-product-container {
+    margin: 0;
+    height: 500px;
+  }
+  .user-sale-container {
+    margin: 0px 20px 0px 0px;
+    width: 30%;
+  }
+  .user-sale-container > .sale-product-container {
+    margin: 0;
+    height: 500px;
+  }
+  .user-list-card {
+    width: 30%;
+  }
+}
+@media (min-width: 1050px) {
+  .user-list-card {
+    width: 18%;
+  }
+  .user-list-card > img {
+    width: 100%;
+  }
+}

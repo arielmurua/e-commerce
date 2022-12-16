@@ -1,6 +1,7 @@
 import React from 'react'
 import './ProductCard.css'
 import PrImg from '../assets/iphone-img.png'
+import { Link } from 'react-router-dom'
 
 const ProductCard = () => {
   return (
@@ -21,7 +22,9 @@ const ProductCard = () => {
       </div>
       <div className='product-card-btns-container'>
         <button>Add to cart</button>
-        <button>Details</button>
+        <button>
+          <Link to='/products/1'>Details</Link>
+        </button>
       </div>
     </div>
   )

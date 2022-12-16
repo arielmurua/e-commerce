@@ -7,19 +7,23 @@ const Header = () => {
   const [SbShow, setSbShow] = React.useState('')
   const [SearchShow, setSearchShow] = React.useState('')
 
-  const sbHandler = () => {
-    SbShow ? setSbShow('') : setSbShow('show-sidebar')
+  const sbHandler = (e) => {
+    if (e.target.className === "fa-solid fa-bars") {
+      SbShow ? setSbShow('') : setSbShow('show-sidebar')
+    } else {
+      SbShow ? setSbShow('') : setSbShow('')
+    }
   }
   const searchBtnHandler = () => {
-    SearchShow ? setSearchShow('') : setSearchShow('show-search')
-  }
+    SearchShow ? setSearchShow('') : setSearchShow('show-search') 
+  } 
 
   return (
-    <div className='header-wrapper'>
+    <div onClick={sbHandler} className='header-wrapper'>
       <div className='header-div'>
         <i onClick={searchBtnHandler} className="fa-solid fa-magnifying-glass"></i>
         <i className="fa-brands fa-css3"></i>
-        <i onClick={sbHandler} className="fa-solid fa-bars"></i>
+        <i className="fa-solid fa-bars"></i>
       </div>
       <SearchBar show={SearchShow} />
       <SideBar show={SbShow}/>

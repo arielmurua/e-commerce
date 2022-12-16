@@ -1,0 +1,11 @@
+.products-wrapper {
+  display: flex;
+
+}
+.products-side-nav {
+  background-color: aqua;
+}
+.products-container {
+  display: flex;
+  flex-direction: column;
+}
